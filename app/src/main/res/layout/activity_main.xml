@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다!"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/roommateChatButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="56dp"
+        android:text="룸메이트 채팅"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeButton" />
+
+    <Button
+        android:id="@+id/checkInButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="56dp"
+        android:text="점호 체크인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestionButton" />
+
+    <Button
+        android:id="@+id/suggestionButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="100dp"
+        android:text="건의사항 제출"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <Button
+        android:id="@+id/noticeButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="100dp"
+        android:text="공지사항 확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="36dp"
+        android:text="룸메이트 매칭"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roommateChatButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

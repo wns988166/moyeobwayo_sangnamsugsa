@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/adminWelcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리자 페이지"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/manageDormitoryButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="100dp"
+        android:text="기숙사 관리"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminWelcomeTextView" />
+
+    <Button
+        android:id="@+id/checkSuggestionsButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="100dp"
+        android:text="건의사항 확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminWelcomeTextView" />
+
+    <Button
+        android:id="@+id/manageAttendanceButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="56dp"
+        android:text="점호 관리"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manageDormitoryButton" />
+
+    <Button
+        android:id="@+id/sendNoticeButton"
+        android:layout_width="182dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="56dp"
+        android:text="공지사항 발송"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkSuggestionsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

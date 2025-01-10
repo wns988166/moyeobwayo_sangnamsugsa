@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.FloorSelectionActivity">
+
+    <!-- 1층 버튼 -->
+    <Button
+        android:id="@+id/floor1Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1층"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- 2층 버튼 -->
+    <Button
+        android:id="@+id/floor2Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2층"
+        app:layout_constraintTop_toBottomOf="@id/floor1Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- 3층 버튼 -->
+    <Button
+        android:id="@+id/floor3Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3층"
+        app:layout_constraintTop_toBottomOf="@id/floor2Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

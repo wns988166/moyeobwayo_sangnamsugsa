@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/yonam_smart_campus"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+
+        <!-- Chat Activity -->
+        <activity
+            android:name=".ChatActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+
+        <!-- Other Activities -->
+        <activity
+            android:name=".Admin.SuggestionListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuggestionAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.NextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.FloorSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DormitoryManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileOption.ProfileOption4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileOption.ProfileOption3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileOption.ProfileOption2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileOption.ProfileOption1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SuggestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="false" />
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".sign.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login and Main Activities -->
+        <activity android:name=".sign.LoginActivity" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+    </application>
+
+</manifest>

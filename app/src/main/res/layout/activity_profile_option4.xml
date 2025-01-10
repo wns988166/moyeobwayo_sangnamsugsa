@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realwhite"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="메인으로"
+            android:textColor="@color/text_main"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="내 프로필 생성"
+        android:textColor="@color/text_main"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/thema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
+            android:text="체크 리스트"
+            android:textColor="@color/text_main"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <!-- 체크리스트 시작 (라디오 버튼) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/thema"
+        tools:layout_editor_absoluteX="35dp">
+
+        <!-- 청결 민감도 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
+            android:text="청결에 민감한 정도"
+            android:textColor="@color/text_main"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:id="@+id/cleanliness_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <!--            <RadioButton-->
+            <!--                android:id="@+id/sensitivity_very_sensitive"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="매우 민감"-->
+            <!--                android:buttonTint="@color/orange_main"-->
+            <!--                android:layout_marginEnd="20dp"/>-->
+
+            <RadioButton
+                android:id="@+id/cleanliness_sensitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다소 민감"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="30dp"/>
+
+            <RadioButton
+                android:id="@+id/cleanliness_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:buttonTint="@color/orange_main"
+                android:text="보통" />
+
+            <RadioButton
+                android:id="@+id/cleanliness_not_sensitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orange_main"
+                android:text="상관 없음" />
+
+        </RadioGroup>
+
+
+        <!-- 소음 민감도 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
+            android:text="소음에 민감한 정도"
+            android:textColor="@color/text_main"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp" />
+
+        <RadioGroup
+            android:id="@+id/noise_sensitivity_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <!--            <RadioButton-->
+            <!--                android:id="@+id/sensitivity_very_sensitive"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="매우 민감"-->
+            <!--                android:buttonTint="@color/orange_main"-->
+            <!--                android:layout_marginEnd="20dp"/>-->
+
+            <RadioButton
+                android:id="@+id/noise_sensitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다소 민감"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="30dp"/>
+
+            <RadioButton
+                android:id="@+id/noise_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:buttonTint="@color/orange_main"
+                android:text="보통" />
+
+            <RadioButton
+                android:id="@+id/noise_not_sensitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orange_main"
+                android:text="상관 없음" />
+
+        </RadioGroup>
+
+        <!-- 취침 시간 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
+            android:text="취침 시간"
+            android:textColor="@color/text_main"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp" />
+
+        <!-- 첫 번째 라인의 라디오 버튼 -->
+        <RadioGroup
+            android:id="@+id/first_sleep_schedule_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/sleep_early"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10시 이전"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="25dp"/>
+
+            <RadioButton
+                android:id="@+id/sleep_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 ~ 11"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="15dp"/>
+
+            <RadioButton
+                android:id="@+id/sleep_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11 ~ 12"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginStart="20dp"/>
+
+        </RadioGroup>
+
+        <!-- 두 번째 라인의 라디오 버튼 -->
+        <RadioGroup
+            android:id="@+id/second_sleep_schedule_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/sleep_late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 ~ 1"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="23.5dp"/>
+
+            <RadioButton
+                android:id="@+id/sleep_very_late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1시 이후"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+
+        <!--기상 시간-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
+            android:text="기상 시간"
+            android:textColor="@color/text_main"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp" />
+
+        <!-- 첫 번째 라인의 라디오 버튼 -->
+        <RadioGroup
+            android:id="@+id/first_up_schedule_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/up_early"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7시 이전"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="30dp"/>
+
+            <RadioButton
+                android:id="@+id/up_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 ~ 8"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="30dp"/>
+
+            <RadioButton
+                android:id="@+id/up_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 ~ 9"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginStart="20dp"/>
+
+        </RadioGroup>
+
+        <!-- 두 번째 라인의 라디오 버튼 -->
+        <RadioGroup
+            android:id="@+id/second_up_schedule_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/up_late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9 ~ 10"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginEnd="23dp"/>
+
+            <RadioButton
+                android:id="@+id/up_very_late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10시 이후"
+                android:buttonTint="@color/orange_main"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <!--설문지 이동 버튼 (마지막 페이지라 수정함)-->
+    <LinearLayout
+        android:id="@+id/createOptionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_strokerec_orange"
+            android:text="이전으로"
+
+            android:textColor="@color/orange_main"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rec_orange"
+            android:text="룸메이트 매칭!"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

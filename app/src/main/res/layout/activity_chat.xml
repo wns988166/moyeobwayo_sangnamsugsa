@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".ChatActivity">
+
+    <!-- RecyclerView for chat messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Input and send button layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Message input field -->
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="메시지를 입력하세요"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="text" />
+
+        <!-- Send button -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전송"
+            android:padding="12dp"
+            android:minWidth="60dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

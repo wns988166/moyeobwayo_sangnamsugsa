@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.DormitoryManagementActivity">
+
+    <Button
+        android:id="@+id/building1Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1관"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/building2Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2관"
+        app:layout_constraintTop_toBottomOf="@id/building1Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/building3Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3관"
+        app:layout_constraintTop_toBottomOf="@id/building2Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/building4Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4관"
+        app:layout_constraintTop_toBottomOf="@id/building3Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
