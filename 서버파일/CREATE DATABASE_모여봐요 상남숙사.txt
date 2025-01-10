@@ -1,0 +1,34 @@
+CREATE DATABASE y_1;
+
+CREATE TABLE users ( id INT AUTO_INCREMENT PRIMARY KEY, -- 사용자 고유 ID username VARCHAR(50) NOT NULL UNIQUE, -- 사용자 아이디 password VARCHAR(255) NOT NULL, -- 평문 비밀번호 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP );
+
+CREATE TABLE y_1 (
+    userId INT PRIMARY KEY,
+    Embti INT,
+    Jmbti INT,
+    Smbti INT,
+    Tmbti INT,
+    cleanliness INT,
+    coldSens INT,
+    drinkFreq INT,
+    firstLesson INT,
+    grade INT,
+    heatSens INT,
+    inComm INT,
+    noiseSens INT,
+    shareNeeds INT,
+    sleepHabit INT,
+    sleepSche INT,
+    smoke INT,
+    upSche INT,
+    matched BOOLEAN DEFAULT FALSE  -- 매칭 여부를 추적하는 열
+);
+
+
+CREATE TABLE matches (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId1 VARCHAR(20) NOT NULL,
+    userId2 VARCHAR(20) NOT NULL,
+    matchedTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(userId1, userId2)
+);
